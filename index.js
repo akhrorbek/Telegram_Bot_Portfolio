@@ -25,7 +25,9 @@ bot.on('message', msg => {
     const chatId = msg.chat.id
 
     if (msg.text == 'Men haqimda 🙋‍♂️') {
-        bot.sendMessage(chatId, `Ma'lumotlar:\nFirstname:  ${msg.from.first_name}\nLastname:  ${msg.from.last_name}\nUsername:  ${msg.from.username}\nTelegram ID:  ${msg.from.id}\n`)
+        bot.sendPhoto(chatId, 'https://findicons.com/files/icons/977/rrze/720/user_customer.png', {
+            caption : `Ma'lumotlar:\nFirstname:  ${msg.from.first_name}\nLastname:  ${msg.from.last_name}\nUsername:  ${msg.from.username}\nTelegram ID:  ${msg.from.id}\n`
+        })
     }
 })
 
