@@ -129,7 +129,7 @@ bot.on('message', msg => {
     }
 
     if(msg.text == "Asosiy menyu 🎯") {
-        bot.sendMessage(chatId, `Assalomu aleykum, ${msg.from.first_name} ${msg.from.last_name} xush kelibsiz!`, {
+        bot.sendMessage(chatId, `Asosiy menyu 👇`, {
             reply_markup: {
                 keyboard: [
                     [
